@@ -1,0 +1,11 @@
+[ui]
+editor = vim
+username = Stephen Koo <stephen.theking@gmail.com>
+
+[trusted]
+users = 19243, 32069
+groups = 37, staff
+
+[extensions]
+color =
+hgext.convert =
