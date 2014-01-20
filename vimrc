@@ -44,36 +44,3 @@ else
     set guifont=Monaco:h13
 endif
 
-"Function to temporarily change indent settings for CS110"
-command SmallIndent :call SetSmallIndent()
-function! SetSmallIndent()
-    set shiftwidth=2
-    set softtabstop=2
-endfunction
-
-"TeX Stuff"
-command Typeset :call LatexTypesetFile()
-let g:tex_flavor='latex'
-command Skim :call OpenPDFWithSkim()
-command Log :call CheckTexLog()
-function! LatexTypesetFile()
-    write
-    let filen = expand("%")
-    let cmd = join(["pdflatex", filen, "&"], " ")
-    call system(cmd)
-endfunction
-function! OpenPDFWithSkim()
-    let filen = expand("%")
-    let fileroot = split(filen, "\\.")[0]
-    let pdffile = join([fileroot, "pdf"], ".")
-    let cmd = join(["open", "-a", "/Applications/Skim.app", pdffile, "&"], " ")
-    call system(cmd)
-endfunction
-function! CheckTexLog()
-    let filen = expand("%")
-    let fileroot = split(filen, "\\.")[0]
-    let logfile = join([fileroot, "log"], ".")
-    execute join(["tab", "sview", logfile], " ")
-    normal G
-    set autoread
-endfunction
