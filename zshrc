@@ -47,9 +47,3 @@ zle -A .backward-delete-char vi-backward-delete-char
 # Perl-style regular expressions
 # alias grep="grep -P"
 # Doesn't work with BSD grep (on Mac OS X Lion)
-# Use Exuberant-Ctags
-alias ctags="/usr/local/bin/ctags"
-
-alias work="cd ~/Developer/RKLab/bpusystem/RemoteBio/NewServer/"
-alias courses="cd ~/Dropbox/Documents/Courses"
-alias grade="cd ~/Dropbox/Documents/Section\ Leading/2013fall"

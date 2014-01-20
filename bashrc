@@ -6,7 +6,7 @@
 export PS1="\[\033[00;31m\]\u\[\033[00m\]@\h\[\033[01;37m\]\w\[\033[00m\]$ "
 
 # for OpenCV use in python and the biotic package
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/site-packages:/Users/sckoo/Dropbox/Remote\ Biology/PyBiotic/:${PYTHONPATH}
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/Library/Python/2.7/site-packages:${PYTHONPATH}
 
 # matlab shortcut
 alias matlab='/Applications/MATLAB_R2011a_Student.app/bin/matlab'
