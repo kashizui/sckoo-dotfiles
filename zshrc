@@ -36,9 +36,6 @@ plugins=(mercurial, git, svn)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/opt/X11/bin:/usr/texbin
-
 # Use VIM mode
 bindkey -v
 zle -A .backward-kill-word vi-backward-kill-word
