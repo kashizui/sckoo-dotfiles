@@ -6,9 +6,6 @@ export PS1="\[\033[00;31m\]\u\[\033[00m\]@\h\[\033[01;37m\]\w\[\033[00m\]$ "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# for exuberant ctags
-export PATH="/usr/local/bin:$PATH"
-
 # use VIM 'less' instead of less
 VLESS=$(find /usr/share/vim -name 'less.sh')
 if [ ! -z $VLESS ]; then
