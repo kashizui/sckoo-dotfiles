@@ -53,14 +53,4 @@ set hlsearch
 syntax on
 set bg=dark
 set t_Co=256
-if has("gui_running")
-    colorscheme solarized
-else
-    colorscheme desert
-endif
-if has("x11")
-    set guifont=Ubuntu\ Mono\ 12
-else
-    set guifont=Monaco:h13
-endif
 
