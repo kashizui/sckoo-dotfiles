@@ -14,8 +14,8 @@ filetype indent plugin on
 "Mappings for easier tab movement"
 map <F5> :tabp<CR>
 map <F6> :tabn<CR>
-imap <F5> <ESC>:tabp<CR>i
-imap <F6> <ESC>:tabn<CR>i
+imap <F5> <ESC>:tabp<CR>a
+imap <F6> <ESC>:tabn<CR>a
 
 "Other nice mappings"
 map <Backspace> ^
