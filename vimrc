@@ -39,11 +39,15 @@ map N Nzz
 
 " If I accidentally press shift, q and w will still work
 " https://github.com/samking/config-files/blob/master/vimrc
-map:W :w
-map:WQ :wq
-map:wQ :wq
-map:Wq :wq
-map:Q :q
+" map:W :w
+" map:WQ :wq
+" map:wQ :wq
+" map:Wq :wq
+" map:Q :q
+" Removed for now because delays appearance of colon (which irks me)
+
+" Look for a .tags file iteratively from the current directory up to the root
+set tags=./.tags;/,.tags;/
 
 " Search
 set incsearch
