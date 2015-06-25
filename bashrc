@@ -12,3 +12,5 @@ if [ ! -z $VLESS ]; then
     alias less=$VLESS
 fi
 
+# Use VI key bindings
+set -o vi
