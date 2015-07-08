@@ -22,6 +22,8 @@ map <F5> :tabp<CR>
 map <F6> :tabn<CR>
 imap <F5> <ESC>:tabp<CR>a
 imap <F6> <ESC>:tabn<CR>a
+map <leader>[ :tabp<CR>
+map <leader>] :tabn<CR>
 
 " I can never reach the caret
 map <Backspace> ^
@@ -59,3 +61,13 @@ set tags=./.tags;/,.tags;/
 set incsearch
 set hlsearch
 
+" Use directory tree for netrw
+let mapleader=" "
+let g:netrw_liststyle=3
+map <leader><space> :E<cr>
+map <leader>t :tabnew %<cr>:E<cr>
+map <leader>[ :tabprev<cr>
+map <leader>] :tabnext<cr>
+
+" Show the current command in the bottom right corner
+set showcmd
