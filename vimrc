@@ -17,6 +17,12 @@ set t_Co=256
 " File type specific indentation
 filetype indent plugin on
 
+" Use directory tree for netrw
+let mapleader=" "
+let g:netrw_liststyle=3
+map <leader><space> :Explore<cr>
+map <leader>t :tabnew %<cr>:Explore<cr>
+
 " Mappings for easier tab movement
 map <F5> :tabp<CR>
 map <F6> :tabn<CR>
@@ -60,14 +66,6 @@ set tags=./.tags;/,.tags;/
 " Search settings
 set incsearch
 set hlsearch
-
-" Use directory tree for netrw
-let mapleader=" "
-let g:netrw_liststyle=3
-map <leader><space> :E<cr>
-map <leader>t :tabnew %<cr>:E<cr>
-map <leader>[ :tabprev<cr>
-map <leader>] :tabnext<cr>
 
 " Show the current command in the bottom right corner
 set showcmd
