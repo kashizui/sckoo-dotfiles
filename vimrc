@@ -69,3 +69,17 @@ set hlsearch
 
 " Show the current command in the bottom right corner
 set showcmd
+
+" Mac-only settings
+if has("unix")
+  if (system('uname -s') =~? "darwin")
+
+    " Use Mac OS X pasteboard
+    nmap <leader>v :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+    nmap <leader>c :.w !pbcopy<CR><CR>
+    vmap <leader>c :w !pbcopy<CR><CR>
+
+  endif
+endif
+
+
