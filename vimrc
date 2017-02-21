@@ -17,6 +17,15 @@ set t_Co=256
 " File type specific indentation
 filetype indent plugin on
 
+" Sane defaults for file types
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
+
+" Read modeline
+set modeline
+set modelines=5
+
 " Use directory tree for netrw
 let mapleader=" "
 let g:netrw_liststyle=3
@@ -82,4 +91,7 @@ if has("unix")
   endif
 endif
 
-
+" Inspired by percyliang
+" function! ide()
+"     
+" endfunction

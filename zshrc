@@ -54,7 +54,7 @@ RPROMPT='%D %*'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} ✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✓%{$reset_color%}"
  
 # FUNCTIONS
 # get the name of the branch we are on
@@ -129,4 +129,7 @@ zstyle '*' single-ignored show
 # Aliases
 alias la="ls -la"
 alias l="ls"
+
+# History search
+bindkey "^R" history-incremental-search-backward
 
